@@ -1,0 +1,103 @@
+/* CSS reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+/* Base Styles */
+:root {
+    --main-bg-color: #2385c2;
+    --text-bg-color: #edeef0;
+    --text-color: #000000;
+  }
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.container{
+    background:#fff;
+    padding: 25px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.todo-header{
+    display: flex;
+    justify-content: center;
+}
+
+.todo-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.todo-body input{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.todo-body img{
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    padding: 15px;
+    background-color: #23c27c;
+    border-radius: 50%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 18;
+    cursor: pointer;
+    padding:10px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--text-bg-color);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration-color: red;
+}
+.todo-controls-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-controls{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 5px;
+}

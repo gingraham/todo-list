@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Todo List</title>
+</head>
+
+<body>
+    <!-- input for todos -->
+    <div class="container">
+        <div class="todo-header">
+            <h2>ToDo List</h2>
+            <iframe src="https://giphy.com/embed/Y08DJ9Rc3KPGFImy0U" width="40" height="40" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <div class="todo-body">
+            <input type="text" id="todoText" class="todo-input" placeholder="Add your task"> 
+            <!-- button to submit todos -->
+            <img src="assets/images/icons8-add-94.png" alt="+" id="addUpdateTask" onclick="submitTask()">
+        </div>
+        <!-- display for todos -->
+        <ul id="list-items" class="list-items"></ul>
+    </div>
+</body>
+
+</html>

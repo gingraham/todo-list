@@ -73,10 +73,13 @@ body {
     background-color: #23c27c;
     border-radius: 50%;
 }
+ul{
+    padding: 0;
+}
 
 ul li{
     list-style: none;
-    font-size: 18;
+    font-size: 18px;
     cursor: pointer;
     padding:10px;
 }
@@ -88,7 +91,7 @@ li{
     background: var(--text-bg-color);
     margin-bottom: 10px;
     border-radius: 5px;
-    text-decoration-color: red;
+    width: 100%;
 }
 .todo-controls-container{
     display: flex;
